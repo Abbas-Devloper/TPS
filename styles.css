@@ -109,7 +109,6 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  z-index: 1;
   background-color: var(--secondary);
   transition: 0.3s;
   border-radius: 2px;
