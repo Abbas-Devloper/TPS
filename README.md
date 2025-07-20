@@ -2,14 +2,14 @@
 
 This is a responsive and modern landing page for **The Progressive School SDKT** located in Shahdadkot, Pakistan. It is designed to showcase essential information, features, and a contact form for potential students and guardians.
 
-![Preview Screenshot](images/preview.png)
+![Preview Screenshot](images/Preview.png)
 
 ---
 
 ## 🌐 Live Preview
 
 [🔗 View Live Website](https://abbas-devloper.github.io/TPS/)  
-*(Replace with actual link if deployed)*
+
 
 ---
 
