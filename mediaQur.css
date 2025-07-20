@@ -356,7 +356,7 @@
  }
   .swiper-slide,
   .Hero {
-    height: 50vh;
+    height: auto;
   }
 }
 @media (max-width: 500px) {
