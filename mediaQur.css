@@ -1,0 +1,443 @@
+/* ========== FIXED RESPONSIVE MEDIA QUERIES ========== */
+
+/* ---------- Laptops & Medium Screens ---------- */
+@media (max-width: 1125px) {
+  .slide-caption {
+    top: 30%;
+  }
+
+  .slide-caption h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide-caption h1 {
+    font-size: 2.4rem;
+  }
+
+  .slide-caption p {
+    font-size: 1rem;
+  }
+
+  .slide-caption a {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 850px) {
+  .slide-caption {
+    top: 30%;
+  }
+
+  .slide-caption h1 {
+    font-size: 2.2rem;
+  }
+
+  .slide-caption .btn {
+    margin: 6px;
+    padding: 12px 28px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 790px) {
+  .slide-caption h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Between 769px to 793px */
+@media (min-width: 769px) and (max-width: 793px) {
+  .slide-caption {
+    top: 40%;
+  }
+
+  .slide-caption h1 {
+    font-size: 2rem;
+  }
+
+  .slide-caption .btn {
+    margin: 2px;
+    padding: 12px 28px;
+    display: inline-block;
+  }
+}
+
+/* Between 610px to 672px */
+@media (min-width: 610px) and (max-width: 672px) {
+  .slide-caption h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .slide-caption .btn {
+    margin: 2px;
+    padding: 12px 24px;
+    display: inline-block;
+  }
+}
+
+/* ---------- Large Mobiles & Small Tablets ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0 4%;
+  }
+
+  .logo p {
+    font-size: 1.6rem;
+  }
+   .cta-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .cta-section .logoAd img {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+   .meet-progressive .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-box {
+    margin-top: 20px;
+  }
+   .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section .btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: var(--primary);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    padding: 25px 0;
+    display: none;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .slide-caption {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+  }
+
+  .slide-caption h1 {
+    font-size: 2rem;
+  }
+
+  .slide-caption p {
+    font-size: 0.9rem;
+  }
+
+  .slide-caption a,
+  .slide-caption .btn {
+    font-size: 0.9rem;
+    padding: 10px 24px;
+    margin: 2px;
+    display: inline-block;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 1.6rem;
+  }
+   .choose-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+ 
+
+/* ---------- Mobile Phones ---------- */
+@media (max-width: 480px) {
+  .navbar {
+    height: 65px;
+    padding: 0 4%;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 1.3rem;
+  }
+
+  .slide-caption {
+    top: 50%;
+  }
+
+  .slide-caption h1 {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  .slide-caption p {
+    font-size: 0.7rem;
+  }
+
+  .slide-caption a,
+  .slide-caption .btn {
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    margin: 7px;
+    display: inline-block;
+  }
+
+  .swiper-slide,
+  .Hero {
+    height: 95vh;
+  }
+}
+
+/* ---------- Extra Small Screens ---------- */
+@media (max-width: 370px) {
+  .slide-caption .btn {
+    font-size: 0.6rem;
+    padding: 10px 20px;
+    margin: 2px;
+    display: inline-block;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInScaleReverse {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-up fade-in for title */
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zoom-in fade for cards */
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .about-images img,
+  .about-text {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 60%;
+  }
+
+  .about-images img:nth-child(even) {
+    animation-name: fadeInScaleReverse;
+  }
+
+  .about-images img:nth-child(odd) {
+    animation-name: fadeInScale;
+  }
+
+  .about-text {
+    animation-name: fadeInLeft;
+  }
+}
+
+/* Apply animation to each card */
+.choose-card {
+  opacity: 0;
+  animation: zoomFadeIn 0.6s ease forwards;
+}
+
+.choose-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.choose-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.choose-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.choose-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.choose-card:nth-child(5) {
+  animation-delay: 1s;
+}
+.choose-card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.scroll-animate{
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 40% cover 100vh;
+}
+
+
+@keyframes text-appear {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .gallery-grid img,
+  .cta-section,
+  .footer-box {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 60%;
+  }
+}
+
+
+
+@supports (animation-timeline: view()) {
+  .cta-section h2,
+  .cta-section .btn,
+  .cta-section .logoAd img {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 40% cover 60%;
+    animation-fill-mode: both;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
