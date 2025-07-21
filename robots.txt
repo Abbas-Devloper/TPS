@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abbas-devloper.github.io/TPS/sitemap.xml

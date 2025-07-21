@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - The Progressive School SDKT</title>
+  <link rel="icon" href="images/Logo.jpg" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaQur.css">
+  <style>
+    /* === ABOUT PAGE STYLES === */
+
+.about-banner {
+  background: linear-gradient(to right, #00416a, #e4e5e6);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Shared Section Styling */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-section p,
+.about-section li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team-member {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00416a;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  max-width: 700px;
+  margin: 0 auto 10px;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.value-item {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 5px solid #00416a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.value-item h4 {
+  font-size: 1.3rem;
+  color: #00416a;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #00416a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-banner h1 {
+    font-size: 2rem;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    .values-grid .value-item {
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+   <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/Logo.jpg" alt="">
+        <p>TPS</p>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="about-banner">
+    <div class="container">
+      <h1>About The Progressive School SDKT</h1>
+      <p>Dedicated to academic excellence and moral integrity.</p>
+    </div>
+  </section>
+
+  <section id="vision" class="about-section">
+    <div class="container">
+      <h2>Our Vision</h2>
+      <p>To nurture young minds into confident, responsible leaders through innovative education rooted in Islamic values and modern knowledge.</p>
+    </div>
+  </section>
+
+  <section id="mission" class="about-section">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <ul>
+        <li>Provide a secure, supportive environment for holistic development.</li>
+        <li>Deliver high-quality, affordable education tailored to modern needs.</li>
+        <li>Promote creativity, critical thinking, and character building.</li>
+        <li>Equip students with tools to excel in academics and life.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="team" class="about-section">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <div class="team-member">
+        <img src="images/Owner.png" alt="Founder Photo">
+        <h3>Hyder Ali Soomro</h3>
+        <p>Founder & Lead Teacher</p>
+        <p>Hyder Ali Soomro is the visionary educator behind The Progressive School SDKT. His leadership and passion drive our mission to empower students with knowledge and values.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="about-section">
+    <div class="container">
+      <h2>Core Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h4>Integrity</h4>
+          <p>We emphasize honesty and strong moral principles.</p>
+        </div>
+        <div class="value-item">
+          <h4>Respect</h4>
+          <p>We celebrate diversity and foster mutual respect.</p>
+        </div>
+        <div class="value-item">
+          <h4>Excellence</h4>
+          <p>We strive for the highest standards in everything we do.</p>
+        </div>
+        <div class="value-item">
+          <h4>Community</h4>
+          <p>We engage families and communities in student success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 The Progressive School SDKT. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
