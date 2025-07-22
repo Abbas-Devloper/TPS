@@ -217,6 +217,10 @@
   .section-title {
     font-size: 2rem;
   }
+ .staff-box {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 
 }
 
