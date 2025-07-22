@@ -200,7 +200,8 @@ marquee {
 .slide-caption h1 {
   font-size: 3.5rem;
   margin-bottom: 5px;
-  background: linear-gradient(45deg, #ffb703, #f0e6e6, #2747b9);
+  font-weight: 800;
+  background: linear-gradient(45deg, #ffb703, #d3c4c4, #2747b9);
   -webkit-text-fill-color: transparent;
   text-shadow: none;
   -webkit-background-clip: text;
@@ -428,7 +429,7 @@ marquee {
   justify-content: space-between;
   gap: 40px;
   padding: 60px 20px;
-  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+ background: linear-gradient(135deg, #004080, #007BFF);
   border-radius: 20px;
   overflow: hidden;
   scroll-margin-top: 80px;
@@ -457,14 +458,12 @@ marquee {
   border-radius: 15px;
   cursor: pointer;
   object-fit: contain;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
-  transition: transform 0.4s ease; /* smooth transition for transform only */
-  animation: floatImage 4s ease-in-out infinite;
-}
+  }
 
 .cta-section .logoAd img:hover {
-  animation: none;             /* stop floating animation on hover */
-  transform: scale(1.06);      /* zoom a bit */
+  transition: all .3s ease;
+  transform: scale(1.1);       
+  animation: none;
 }
 @keyframes floatImage {
   0%, 100% {
@@ -483,28 +482,30 @@ marquee {
 }
 
 .cta-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-bottom: 20px;
-  color: #222;
+  color: var(--secondary);
   animation: fadeInLeft 1s ease forwards;
 }
 
 .cta-section a {
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
 }
 
-.cta-section .btn {
+.cta-section button {
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--secondary);
   padding: 14px 30px;
   border-radius: 30px;
+  cursor: pointer;
   font-size: 1.1rem;
-  transition: background 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.cta-section .btn:hover {
+.cta-section button:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
@@ -786,14 +787,8 @@ input[type="radio"] {
   color: #fff;
   box-sizing: border-box;
 }
-
-#academics h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
+.aca{
+  color: var(--secondary) !important;
 }
 
 #academics p {
@@ -804,6 +799,95 @@ input[type="radio"] {
   margin: 0 auto;
 }
 
+/* fee-structure */
+/* ===== FEE STRUCTURE SECTION ===== */
+#fees {
+  padding: 50px 20px;
+  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#fees h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+#fees table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#fees th, 
+#fees td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#fees th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+#fees tr:hover {
+  background-color: #f1f9ff;
+}
+
+/* Payment Methods */
+.payment-methods {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.payment-methods img {
+  width: 60px;
+  height: 60px;
+    cursor: pointer;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+}
+
+.payment-item p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.payment-methods img:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#fees p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
 
 
 

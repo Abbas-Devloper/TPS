@@ -502,7 +502,7 @@
 .scroll-animate{
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 40% cover 100vh;
+  animation-range: entry 20% cover 100vh;
 }
 
 
@@ -537,7 +537,7 @@
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timeline: view();
-    animation-range: entry 40% cover 60%;
+    animation-range: entry 20% cover 80%;
   }
 }
 
@@ -550,7 +550,7 @@
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-timeline: view();
-    animation-range: entry 40% cover 60%;
+    animation-range: entry 20% cover 80%;
     animation-fill-mode: both;
   }
 }
