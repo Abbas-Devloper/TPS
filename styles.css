@@ -463,15 +463,6 @@ marquee {
 .cta-section .logoAd img:hover {
   transition: all .3s ease;
   transform: scale(1.1);       
-  animation: none;
-}
-@keyframes floatImage {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
 
