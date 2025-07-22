@@ -501,6 +501,195 @@ marquee {
   transform: translateY(-2px);
 }
 
+/* ==== News & Events Section ==== */
+.news-events-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.news-events-section .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.news-events-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+}
+
+.events, .news {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events:hover, .news:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
+}
+
+.events ul, .news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events li {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.event-date {
+  display: block;
+  font-weight: bold;
+  color: #007bff;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.event-title {
+  font-size: 18px;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.event-desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.news li {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.3s ease;
+}
+
+.news a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news a:hover {
+  color: #0056b3;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  color: #fff;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.badge.green { background-color: #28a745; }
+.badge.blue { background-color: #007bff; }
+.badge.red { background-color: #dc3545; }
+.badge.orange { background-color: #fd7e14; }
+.badge.purple { background-color: #6f42c1; }
+
+.admission-section {
+  padding: 60px 20px;
+  background: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admission-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admission-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.admission-text h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.admission-text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.admission-text ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.admission-text ul li {
+  background: url('https://img.icons8.com/emoji/16/000000/check-mark-emoji.png') no-repeat left center;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.admission-text .highlight {
+  font-weight: bold;
+  font-size: 17px;
+  color: #0d6efd;
+  margin-top: 15px;
+}
+
+.admission-image {
+  flex: 1;
+  text-align: center;
+}
+
+.admission-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 100vh;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .admission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .admission-text {
+    order: 2;
+  }
+
+  .admission-image {
+    order: 1;
+  }
+}
+
+
+
 /* ========== SCHOOL GALLERY SECTION ========== */
 .school-gallery {
   text-align: center;
