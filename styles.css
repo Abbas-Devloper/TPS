@@ -260,7 +260,7 @@ marquee {
 .about-section {
   padding: 60px 20px;
   width: 100%;
-  height: 120vh;
+  height: auto;
   min-height: 120vh;
   scroll-margin-top: 80px;
   background-color: #ffffff;
@@ -611,6 +611,8 @@ marquee {
 .badge.orange { background-color: #fd7e14; }
 .badge.purple { background-color: #6f42c1; }
 
+
+/* .admission-section */
 .admission-section {
   padding: 60px 20px;
   background: #f0f4f8;
@@ -623,7 +625,6 @@ marquee {
   gap: 40px;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -672,7 +673,7 @@ marquee {
 .admission-image img {
   max-width: 100%;
   border-radius: 10px;
-  height: 90vh;
+  height: 70vh;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {

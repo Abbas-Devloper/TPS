@@ -11,10 +11,14 @@
   }
 }
 
+
 @media (min-width: 1065px) and (max-width: 1656px) {
   .about-section {
     height: auto;
     min-height: auto;
+  }
+  .admission-image img{
+    height: auto;
   }
 
 }
@@ -153,11 +157,21 @@
     width: 250px;
     margin-bottom: 30px;
   }
-
+  .news-events-section h2 {
+    font-size: 1.4rem;
+  }
+.events, .news{
+  flex: 1 1 30%;
+}
   .meet-progressive .container {
     flex-direction: column;
     text-align: center;
   }
+
+  .news-events-section .container {
+  gap: 20px;
+  max-width: 1800px;
+}
 
   .info-box {
     margin-top: 20px;
