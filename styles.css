@@ -22,6 +22,37 @@ body {
   background-color: #f9f9f9;
 }
 
+.announcement-bar {
+  background-color: #f44336d9;
+  color: #fff;
+  padding: 8px 15px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+}
+.announcement-bar a{
+  text-decoration: none;
+  font-style: none;
+  color: white;
+  font-weight: 600;
+}
+.announcement-bar a:hover{
+  color: rgb(21, 10, 10);
+  transition: all .4s ease;
+}
+.announcement-label {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+}
+marquee {
+  flex-grow: 1;
+  font-size: 15px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
