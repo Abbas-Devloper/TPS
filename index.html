@@ -275,6 +275,63 @@
 
 
 
+<!-- ==== TESTIMONIAL SECTION ==== -->
+<section class="testimonials scroll-animate" style="padding: 50px 0; background: #f5f7fa;">
+  <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px;">What Our Students Say</h2>
+
+  <div class="swiper testimonial-slider">
+    <div class="swiper-wrapper">
+
+      <!-- Testimonial 1 -->
+      <div class="swiper-slide testimonial-box">
+        <img src="images/man.png" alt="Student 1">
+        <h3>Ali Raza</h3>
+        <p>"I love my school because the teachers are kind and make learning fun!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="swiper-slide testimonial-box">
+        <img src="images/woman.png" alt="Student 2">
+        <h3>Sana Malik</h3>
+        <p>"The computer lab is my favorite. We learn with fun and activities!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="swiper-slide testimonial-box">
+        <img src="images/man (1).png" alt="Student 3">
+        <h3>Ahmed Khan</h3>
+        <p>"My teachers help me understand everything clearly. I enjoy science the most!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="swiper-slide testimonial-box">
+        <img src="images/woman (1).png" alt="Student 4">
+        <h3>Zoya Sheikh</h3>
+        <p>"This school gave me confidence and helped me speak English better."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="swiper-slide testimonial-box">
+        <img src="images/man (1).png" alt="Student 5">
+        <h3>Hassan Ali</h3>
+        <p>"I love sports day and fun events — my favorite time of the year!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+    </div>
+
+    <!-- Swiper Navigation -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+
   <section class="contact-section" id="contact">
     <div class="container scroll-animate">
       <h2 class="section-title">📞 Contact Us</h2>
@@ -421,6 +478,30 @@
 
 
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+
 
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -478,7 +559,7 @@
       once: true,
     });
     // Initialize Swiper
-    var swiper = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper", {
       loop: true,
       autoplay: {
         delay: 4000,

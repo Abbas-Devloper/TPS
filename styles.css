@@ -701,6 +701,58 @@ input[type="radio"] {
   line-height: 1.6;
 }
 
+
+
+
+
+/* testinomial */
+
+.testimonial-box {
+  background: white;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-box h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+.testimonial-box h3:hover{
+  color: #51c839;
+  transition: all .5s ease;
+}
+.testimonial-box p {
+  font-size: 15px;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #f6c91d;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+
+
 /*contact us*/
 .contact-section {
   background: #f9f9f9;
