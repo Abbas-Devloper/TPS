@@ -1500,7 +1500,7 @@ input[type="radio"] {
 .scroll-animate{
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 100vh;
+  animation-range: entry 10% cover 120vh;
 }
 
 
